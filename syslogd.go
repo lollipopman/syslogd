@@ -1,3 +1,4 @@
+// vim: noexpandtab tabstop=2 shiftwidth=2:
 package syslogd
 
 import (
