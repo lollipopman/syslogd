@@ -105,10 +105,10 @@ func (s *Server) read(read readFunc) {
 
 		parts, err := s.parse(buf[:n])
 
-		parts["source"] = addr.String()
-
-		s.channel <- parts
-
+		if err == nil {
+			parts["source"] = addr.String()
+			s.channel <- parts
+		}
 	}
 
 }
