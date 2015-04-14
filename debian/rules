@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+export DH_OPTIONS
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+# DH_GOPKG is the upstream path which you would normally “go get”.
+# Using it allows us to build applications without patching locations.
+export DH_GOPKG := github.com/lollipopman/syslogd
+
+%:
+	dh $@ --buildsystem=golang --with=golang

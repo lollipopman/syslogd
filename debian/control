@@ -1,0 +1,19 @@
+Source: golang-syslogd-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Maintainer: Jesse Hathaway <jesse@mbuki-mvuki.org>
+Description: Go client for doozerd, a consistent, distributed data store
+ This package contains the doozer binary for interacting with the Doozer
+ server. It implements all of the operations supported by the Doozer
+ client library, but can be used on the command line.
+Vcs-Browser: https://github.com/lollipopman/syslogd
+Vcs-Git: git@github.com:lollipopman/syslogd.git
+
+Package: golang-syslogd-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Maintainer: Jesse Hathaway <jesse@mbuki-mvuki.org>
+Description: Go client for doozerd, a consistent, distributed data store
+ This package contains the doozer binary for interacting with the Doozer
+ server. It implements all of the operations supported by the Doozer
+ client library, but can be used on the command line.
